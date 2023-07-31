@@ -1,0 +1,55 @@
+<HTML>
+
+<HEAD>
+  <TITLE>Title for page 3</TITLE>
+
+<link rel="stylesheet" type="text/css" href="page2.css">
+
+<!--  
+
+example of Javascript form validation  
+- code in the HTML page 
+ 
+-->
+
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["firstname"].value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+}
+
+</script>
+
+</HEAD>
+
+
+<H2> Welcome to HTML Basics - page 3</H2>
+<BR><BR>
+
+<H1> Forms Demo using GET method with action by PHP script and Javascript validation</H1>
+
+<form name="myForm" method="get" onsubmit="return validateForm()" action="get.php">
+    first name: <input type="text" name="firstname"><br>
+	last name: <input type="text" name="lastname"><br>
+	password: <input type="password" name="password"><br>
+	<input type="submit" value="Submit">
+</form>
+
+
+
+<BR><BR>
+
+<A HREF="index.html">Link to page 1 - main page</A>  <BR> <BR>
+<A HREF="page2.html">Link to page 2 - CSS demo</A> <BR> <BR>
+<A HREF="page4.html">Link to page 4 - Form POST demo using PHP</A> <BR> <BR>
+<A HREF="page5.html">Link to page 5 - Images Demo</A> <BR> <BR>
+
+
+<BODY>
+
+</BODY>
+
+</HTML>
